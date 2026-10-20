@@ -271,8 +271,7 @@ It takes roughly 20 minutes and restores every file in a `finally` block; `--onl
   histogram.
 - Nothing has been run behind real TLS, real DNS or a real network partition. The "failures" are programmed 503s,
   refused ports and latch-blocked handlers. The demo numbers come from one laptop and are illustrative.
-- CI: the workflow (`.github/workflows/ci.yml`, Java 17 and 21, `mvn verify` then the demo) is included, but CI has
-  not been confirmed from this directory (check the Actions tab). Locally, `mvn -q -B verify` passes with 94 tests
+- CI: the workflow (`.github/workflows/ci.yml`, Java 17 and 21, `mvn verify` then the demo) is included. CI ran green on the first run on GitHub Actions (Java 17 and 21, ubuntu-latest, 2026-10-20). Locally, `mvn -q -B verify` passes with 94 tests
   on JDK 17.
 
 ## Layout
